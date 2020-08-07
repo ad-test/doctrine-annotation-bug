@@ -1,0 +1,11 @@
+{
+    "name": "example/my-lib",
+    "type": "library",
+    "require": {
+        "php": "^7.2",
+        "doctrine/annotations": "1.5"
+    },
+    "autoload": {
+        "psr-4": {"MyLib\\": "lib/"}
+    }
+}

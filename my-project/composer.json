@@ -1,0 +1,21 @@
+{
+    "name": "example/my-project",
+    "type": "project",
+    "require": {
+        "php": "^7.2",
+        "doctrine/orm": "2.6",
+        "example/my-lib": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {"App\\": "app/"}
+    },
+    "scripts": {
+        "update-db": "doctrine orm:schema-tool:update --force"
+    },
+    "repositories": [
+        {
+          "type": "path",
+          "url": "../my-lib"
+        }
+    ]
+}
